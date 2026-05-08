@@ -18,4 +18,4 @@ std::string join_topics(const std::vector<std::string>& topics);
 std::vector<Problem> load_problems_from_csv(const std::string& path);
 void save_problems_to_csv(const std::string& path, const std::vector<Problem>& problems);
 
-}  // namespace scheduler
+}
