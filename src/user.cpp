@@ -67,7 +67,7 @@ bool UserProfile::has_solved(const std::string& problem_id) const {
 
 double UserProfile::get_topic_proficiency(const std::string& topic) const {
     const auto iterator = topic_proficiency.find(topic);
-    if (iterator == topic_proficiency.end()) {
+    if (iterator == topic_proficiency.end()) { // If not found
         return 0.5;
     }
     return iterator->second;

@@ -30,6 +30,7 @@ std::vector<std::string> split_topics(const std::string& raw_topics) {
     std::stringstream stream(raw_topics);
     std::string topic;
 
+    // topics are separated by |
     while (std::getline(stream, topic, '|')) {
         topic = trim(topic);
         if (!topic.empty()) {
