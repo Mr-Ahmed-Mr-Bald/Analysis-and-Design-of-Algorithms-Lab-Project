@@ -1,0 +1,12 @@
+topic,proficiency
+implementation,0.589222
+graphs,0.322739
+trees,0.658529
+math,0.936194
+bfs,0.795275
+greedy,0.687582
+dp,0.2164
+knapsack,0.415157
+binary_search,0.260505
+prefix_sum,0.34755
+dfs,0.759

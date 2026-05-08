@@ -1,0 +1,13 @@
+id,difficulty,estimated_time,topics
+P1,900,39,bitmasks|number_theory|math
+P2,1200,72,two_pointers
+P3,1500,70,number_theory
+P4,1700,45,graphs|implementation|number_theory
+P5,2100,42,number_theory
+P6,1000,73,implementation|trees
+P7,1800,52,two_pointers|strings
+P8,1600,54,graphs|math
+P9,1800,116,prefix_sum|graphs
+P10,1500,52,bitmasks|math
+P11,1800,59,trees|strings|dp
+P12,1200,59,number_theory
