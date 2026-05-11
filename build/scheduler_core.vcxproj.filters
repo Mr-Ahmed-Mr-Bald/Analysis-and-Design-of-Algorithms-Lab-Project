@@ -10,6 +10,21 @@
     <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\user.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\benefit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\greedy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\knapsack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\evaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\src\display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\AUC\Semester Five\Analysis &amp; Design of Algorithms Lab\Project\CMakeLists.txt" />
