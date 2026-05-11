@@ -1,0 +1,8 @@
+================================================================================
+Linker Errors
+Generated: 2026-05-11T19:31:17.767Z
+Total Errors: 1
+================================================================================
+
+[LNK1201] (MSVC)
+error writing to program database 'D:\AUC\Semester Five\Analysis & Design of Algorithms Lab\Project\build\Debug\gen_user.pdb'; check for insufficient disk space, invalid path, or insufficient privilege [D:\AUC\Semester Five\Analysis & Design of Algorithms Lab\Project\build\gen_user.vcxproj]

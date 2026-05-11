@@ -10,9 +10,9 @@
 
 namespace {
 
-// Fixed data layout — all paths are relative to the working directory.
-const std::string PROBLEMS_PATH  = "data/problems.csv";
-const std::string USERS_ROOT     = "data/users";
+// All paths are relative to the working directory.
+const std::string PROBLEMS_PATH = "data/problems.csv";
+const std::string USERS_ROOT = "data/users";
 const std::string BENCHMARK_PATH = "data/results/benchmarks.csv";
 
 void print_usage(const char* program_name) {
@@ -45,6 +45,7 @@ int parse_time_budget(const std::string& raw_value) {
 }  // namespace
 
 int main(int argc, char* argv[]) {
+
     if (argc < 3) {
         print_usage(argv[0]);
         return 1;
@@ -53,11 +54,11 @@ int main(int argc, char* argv[]) {
     const std::string username   = argv[1];
     const std::string raw_budget = argv[2];
 
-    // Derive all user-specific paths from the username.
+    // Derive all user-related paths from the username.
     const std::filesystem::path user_dir = std::filesystem::path(USERS_ROOT) / username;
-    const std::string profile_path  = (user_dir / "profile.csv").generic_string();
-    const std::string topic_path    = (user_dir / "topic_proficiency.csv").generic_string();
-    const std::string history_path  = (user_dir / "user_history.csv").generic_string();
+    const std::string profile_path = (user_dir / "profile.csv").generic_string();
+    const std::string topic_path = (user_dir / "topic_proficiency.csv").generic_string();
+    const std::string history_path = (user_dir / "user_history.csv").generic_string();
 
     int time_budget = 0;
 
@@ -71,10 +72,8 @@ int main(int argc, char* argv[]) {
     scheduler::UserProfile user_profile;
     std::vector<scheduler::Problem> problems;
 
-    std::cout << "Current Working Directory: " << std::filesystem::current_path() << std::endl;
-std::cout << "Checking for: " << profile_path << std::endl;
     try {
-        problems     = scheduler::load_problems_from_csv(PROBLEMS_PATH);
+        problems = scheduler::load_problems_from_csv(PROBLEMS_PATH);
         user_profile = scheduler::load_user_profile(profile_path, topic_path, history_path);
     } catch (const std::exception& error) {
         std::cerr << "Error loading data: " << error.what() << '\n';

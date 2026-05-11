@@ -43,7 +43,7 @@ std::vector<Problem> knapsack_schedule(
     const int cols = (time_budget + 1);
     const int rows = (n + 1);
 
-    std::vector<int> table(rows * cols, 0);
+    std::vector<long long> table(rows * cols, 0);
 
     auto cell = [cols](int row, int col) -> int {
         return row * cols + col;
@@ -57,7 +57,7 @@ std::vector<Problem> knapsack_schedule(
             // Take item i if it fits
             if (t >= item.weight) {
                 const int prev = (t - item.weight);
-                const int with_item = table[cell((i - 1), prev)] + item.value;
+                const long long with_item = table[cell((i - 1), prev)] + item.value;
                 if (with_item > table[cell(i, t)]) {
                     table[cell(i, t)] = with_item;
                 }

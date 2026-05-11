@@ -24,7 +24,7 @@ std::unordered_set<std::string> collect_topics(const std::vector<scheduler::Prob
 }  // namespace
 
 int main(int argc, char* argv[]) {
-    const std::string username = argc > 1 ? argv[1] : "username-example";
+    const std::string username = argc > 1 ? argv[1] : "username-1";
     const std::string problem_path = argc > 2 ? argv[2] : "data/problems.csv";
     const std::string user_root = argc > 3 ? argv[3] : "data/users";
     const unsigned int seed = argc > 4 ? static_cast<unsigned int>(std::stoul(argv[4])) : 123U;
