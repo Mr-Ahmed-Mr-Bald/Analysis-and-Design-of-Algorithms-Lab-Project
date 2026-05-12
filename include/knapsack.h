@@ -13,7 +13,7 @@ std::vector<Problem> knapsack_schedule(
     const std::vector<Problem>& problems,
     const UserProfile& user_profile,
     int time_budget,
-    int benefit_scale = 1000000
+    int benefit_scale = 1000'000
 );
 
 }  // namespace scheduler

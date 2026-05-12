@@ -14,9 +14,9 @@ std::vector<Problem> knapsack_schedule(
 ) {
     // Build item list. Skip problems that cannot fit.
     struct Item {
-        int weight = 0; // estimated_time
-        int value  = 0; // benefit * benefit_scale (integer)
-        int index = 0; // index into `problems`
+        long long weight = 0; // estimated_time
+        long long value  = 0; // benefit * benefit_scale (integer)
+        long long index = 0; // index into `problems`
     };
 
     std::vector<Item> items;
@@ -28,7 +28,7 @@ std::vector<Problem> knapsack_schedule(
             continue;
         }
         const double benefit = calculate_benefit(problem, user_profile);
-        const int scaled_value = (benefit * benefit_scale);
+        const long long scaled_value = (benefit * benefit_scale);
         if (scaled_value <= 0) {
             continue;
         }
