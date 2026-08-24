@@ -28,7 +28,7 @@ std::vector<Problem> knapsack_schedule(
             continue;
         }
         const double benefit = calculate_benefit(problem, user_profile);
-        const long long scaled_value = (benefit * benefit_scale);
+        const long long scaled_value = (1LL * benefit * benefit_scale);
         if (scaled_value <= 0) {
             continue;
         }
@@ -56,7 +56,7 @@ std::vector<Problem> knapsack_schedule(
             table[cell(i, t)] = table[cell((i - 1), t)];
             // Take item i if it fits
             if (t >= item.weight) {
-                const int prev = (t - item.weight);
+                const long long prev = (t - item.weight);
                 const long long with_item = table[cell((i - 1), prev)] + item.value;
                 if (with_item > table[cell(i, t)]) {
                     table[cell(i, t)] = with_item;
@@ -67,7 +67,7 @@ std::vector<Problem> knapsack_schedule(
 
     // Backtrack through to recover the selected set.
     std::vector<bool> selected(n, false);
-    int remaining = time_budget;
+    long long remaining = time_budget;
 
     for (int i = n; i >= 1 && remaining > 0; --i) {
         const Item& item = items[(i - 1)];

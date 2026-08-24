@@ -20,16 +20,16 @@
 			"id" : "scheduler_core::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "scheduler::@6890427a1f51a3e7e1df"
+			"id" : "gen_user::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "gen_test::@6890427a1f51a3e7e1df"
+			"id" : "scheduler::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "gen_problems::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "gen_user::@6890427a1f51a3e7e1df"
+			"id" : "gen_test::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
